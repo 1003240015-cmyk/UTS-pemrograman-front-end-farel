@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaryaKayu | Furniture Custom Impian Anda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">KaryaKayu.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#customizer">Desain Sendiri</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Wujudkan Furniture <br>Sesuai Imajinasi</h1>
+            <p>Desain furniture custom dengan material kayu premium dan pengerjaan detail oleh pengrajin lokal terbaik.</p>
+            <a href="#customizer" class="btn-primary">Mulai Desain Sekarang</a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-grid">
+            <a href="#kitchenset" class="category-item">
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=80" alt="Kitchen Set">
+                <div class="category-overlay">
+                    <h3>Kitchen Set</h3>
+                </div>
+            </a>
+            
+            <a href="#ruangtamu" class="category-item">
+                <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80" alt="Ruang Tamu">
+                <div class="category-overlay">
+                    <h3>Ruang Tamu</h3>
+                </div>
+            </a>
+
+            <a href="#kamartidur" class="category-item">
+                <img src=img/kamar-tidur.webp alt="Kamar Tidur">
+                <div class="category-overlay">
+                    <h3>Kamar Tidur</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="customizer" class="container section-padding">
+        <div class="section-title">
+            <h2>Simulasi Custom Furniture</h2>
+            <p>Pilih spesifikasi untuk melihat estimasi harga.</p>
+        </div>
+
+        <div class="customizer-grid">
+            <div class="preview-area">
+                <img id="product-image" src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Furniture Preview">
+                <div class="price-tag">
+                    Estimasi: <span id="total-price">Rp 2.500.000</span>
+                </div>
+            </div>
+
+            <div class="controls-area">
+                <form id="custom-form">
+                    <div class="control-group">
+                        <label>Jenis Furniture</label>
+                        <select id="furniture-type">
+                            <option value="chair" data-price="1500000">Kursi Minimalis (Rp 1.5jt)</option>
+                            <option value="sofa" data-price="3500000">Sofa 2 Seater (Rp 3.5jt)</option>
+                            <option value="table" data-price="2500000">Meja Kopi (Rp 2.5jt)</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Jenis Kayu</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="wood" value="jati" data-price="1000000" checked>
+                                <span class="box">Jati (+1jt)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="wood" value="mahoni" data-price="500000">
+                                <span class="box">Mahoni (+500rb)</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="wood" value="pinus" data-price="200000">
+                                <span class="box">Pinus (+200rb)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Pilihan Warna / Finishing</label>
+                        <div class="color-options">
+                            <div class="color-circle active" data-color="#8d6e63" style="background-color: #8d6e63;"></div>
+                            <div class="color-circle" data-color="#3e2723" style="background-color: #3e2723;"></div>
+                            <div class="color-circle" data-color="#d7ccc8" style="background-color: #d7ccc8;"></div>
+                            <div class="color-circle" data-color="#263238" style="background-color: #263238;"></div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-secondary" onclick="alert('Pesanan custom Anda telah dikirim ke WhatsApp kami!')">Pesan Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="bg-light section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Karya Terbaru</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=400&q=80" alt="Karya 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=400&q=80" alt="Karya 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=400&q=80" alt="Karya 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <section id="kitchenset" class="product-catalog section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Koleksi Kitchen Set</h2>
+                <p>Dapur modern dengan fungsionalitas maksimal.</p>
+            </div>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <img src=img/kitchenset-L.jpeg alt="Kitchen Set L-Shape">
+                    <div class="card-info">
+                        <h4>Minimalis L-Shape</h4>
+                        <p class="price">Rp 3.500.000 / meter</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src=img/island-teak.jpeg alt="Kitchen Island">
+                    <div class="card-info">
+                        <h4>Kitchen Island Teak</h4>
+                        <p class="price">Rp 5.200.000</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src=img/cabinet-atas.jpeg alt="Kabinet Atas">
+                    <div class="card-info">
+                        <h4>Kabinet Gantung</h4>
+                        <p class="price">Rp 1.800.000 / unit</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ruangtamu" class="product-catalog section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Koleksi Ruang Tamu</h2>
+                <p>Kenyamanan dan estetika untuk keluarga.</p>
+            </div>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=400&q=80" alt="Sofa Hijau">
+                    <div class="card-info">
+                        <h4>Sofa Chesterfield Velvet</h4>
+                        <p class="price">Rp 8.500.000</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=400&q=80" alt="Meja Kopi">
+                    <div class="card-info">
+                        <h4>Meja Tamu Industrial</h4>
+                        <p class="price">Rp 1.250.000</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&q=80" alt="Kursi Santai">
+                    <div class="card-info">
+                        <h4>Armchair Kayu Jati</h4>
+                        <p class="price">Rp 2.100.000</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kamartidur" class="product-catalog section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Koleksi Kamar Tidur</h2>
+                <p>Istirahat berkualitas dengan nuansa alami.</p>
+            </div>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <img src=img/Dipan-queen.jpg alt="Dipan">
+                    <div class="card-info">
+                        <h4>Dipan Minimalis Queen</h4>
+                        <p class="price">Rp 4.500.000</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=400&q=80" alt="Lemari">
+                    <div class="card-info">
+                        <h4>Lemari Pakaian 3 Pintu</h4>
+                        <p class="price">Rp 6.000.000</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src=img/meja-samping-nakas.webp alt="Nakas">
+                    <div class="card-info">
+                        <h4>Meja Samping (Nakas)</h4>
+                        <p class="price">Rp 750.000</p>
+                        <button class="btn-sm">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <section id="admin-panel" class="container section-padding">
+        <div class="section-title">
+            <h2>Admin Panel (Simulasi CRUD)</h2>
+            <p>Tambahkan produk baru ke dalam list di bawah.</p>
+        </div>
+
+        <div class="admin-form" style="background: #eee; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <input type="text" id="inputName" placeholder="Nama Produk" style="padding: 10px; margin-right: 10px;">
+            <input type="number" id="inputPrice" placeholder="Harga (Angka)" style="padding: 10px; margin-right: 10px;">
+            <input type="text" id="inputImage" placeholder="URL Gambar" style="padding: 10px; margin-right: 10px;">
+            <button onclick="addProduct()" class="btn-primary" style="margin-top:0;">Tambah Produk</button>
+        </div>
+
+        <div id="dynamic-product-list" class="catalog-grid">
+            </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KaryaKayu Furniture. Dibuat dengan sepenuh hati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
